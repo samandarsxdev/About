@@ -13,9 +13,10 @@ font-family: 'Lobster', cursive;
 font-family: 'Mochiy Pop P One', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Zen Antique Soft', serif;
+background: #F2F2F2;
 }
 
-.header .container{
+.main .container{
     width: 1140px;
     margin: 0 auto;
 }
@@ -24,53 +25,422 @@ font-family: 'Zen Antique Soft', serif;
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
+
 }
 .nav-item{
     display: flex;
-    width: 200px;
-}
-.nav-item h2{
-    margin-left: 20px;
+    align-items: center;
 }
 .nav-item p{
-    margin-left: 20px;
-    margin-top: 5px;
+    margin-left: 30px;
+    cursor: pointer;
 }
-
-.btn-submit{
-    background-color: gold;
-    padding: 7px 15px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.nav-item p:hover{
+    color: #F0AED3;
     transition: 0.3s;
-    position: relative;
-    animation-name: mymove;
-    animation-duration: 5s;
-    width: 100px;
-  
+    
 }
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 200px;}
-  }
-.btn-submit:hover{
-  background-color: aqua;
-  color: black;
-  transition: 0.3s;
+.nav-item h2{
+    margin-left: 17px;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
-.section{
+.submit-btn:hover{
+    background-color:#8CF07A;
+    transition: 0.3s;
+}
+.nav-item h2:hover{
+    color: aqua;
+    transition: 0.3s;
+}
+.submit-btn{
+    background-color: gold;
+    color: white;
+    padding: 7px 20px;
+    border:none;
+    border-radius: 5px;
+}
+.header .container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.header-box {
     background-image: url("./picture/Bitmap (5).png");
     background-repeat: no-repeat;
-    background-size: 1200px 90px;
+    height: 120px;
 }
-.section-list{
+.header-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+}
+.header-list h2{
+    margin-left: 50px;
+    color: white;
+    font-size: 40px;
+}
+.header-list img{
+    margin-left: 200px;
+}
+
+.section .container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.section-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    height: 370px;
+}
+.bitmap-picture{
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+    right: 50px;
+    top: 30px;
+}
+.mask-picture{
+    position: relative;
+    top: -500px;
+    right: -410px;
+}
+.group-picture{
+position: relative;
+bottom: 90px;
+left: -100px;
+width: 600px;
+}
+.secton-box-title h2{
+    width: 440px;
+    font-size: 48px;
+    position: relative;
+    top: 70px;
+    left: 40px;
+    color: #495567;
+
+}
+.secton-box-title p{
+    position: relative;
+    font-size: 21px;
+    width: 350px;
+    position: relative;
+    top: 80px;
+    left: 30px;
+    color: #939CAA;
+}
+.secton-box-title{
+    width: 500px;
+}
+.main-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
 }
-.section-list img{
-    position: absolute;
-    left: 80%;
+.mask-main-section{
+    /* width: 100px; */
+    position: relative;
+    top: 300px;
+}
+.group-main-section{
+    width: 400px;
+    position: relative;
+    top: 45px;
+    right: 105px;
+    z-index: 1;
+}
+.bitmap-main-section{
+    width: 400px;
+    border-radius:50%;
+    position: relative;
+    left: 200px;
+    bottom: 140px;
+
+}
+.mainsection-title h2{
+    width: 440px;
+    font-size: 48px;
+    position: relative;
+    top: 20px;
+    color: #495567;
+}
+.mainsection-title p{
+    font-size: 21px;
+    width: 350px;
+    position: relative;
+    top: 30px;
+    color: #939CAA;
+}
+.main-box .container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.main-box h2{
+    text-align:center;
+    font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+font-size: 48px;
+color: #495567;
+}
+.main-box-subject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+}
+.main-title h3{
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #495567;
+    position: relative;
+    top: 30px;
+}
+.main-title p{
+    color: #939CAA;
+    font-size: 15px;
+    font-family: Lexend Deca;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 25px;
+position: relative;
+top: 40px;
+/* or 167% */
+text-align: center;
+}
+
+.header-subject .container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.header-subject{
+    padding: 90px 0;
+}
+.header-subject-title{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 0;
+}
+.header-subject-title-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-subject-title-box-row:nth-child(1){
+    background: #D8F0E7;
+    width: 450px;
+   
+    padding: 20px 20px;
+}
+.header-subject-title-box-row:nth-child(2){
+    background: #D8F0E7 ;
+    width: 450px;
+    padding: 10px 20px;
+    position: relative;
+    top: 30px;
+}
+.header-subject-title-box-row:nth-child(3){
+    background: #D8F0E7 ;
+    width: 450px;
+    padding: 10px 20px;
+    position: relative;
+    top: 50px;
+}
+.path-header-subject-title-box{
+    position: relative;
+    left: 400px;
+    
+}
+.path-header-subject-title-box-text-one{
+    position: relative;
+    top: -20px;
+    font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+color: #495567;
+}
+.path-header-subject-title-box-text-two{
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #495567;
+    position: relative;
+    top: -10px;
+}
+.path-header-subject-title-box-text-fre{
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #495567;
+    position: relative;
+    top: -10px;
+}
+.path-text{
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    
+    
+    color: #495567;
+    
+}
+
+.path3{
+    position: relative;
+    left: 400px;
+    top: 10px;
+}
+.path4{
+    position: relative;
+    left: 400px; 
+    top: 10px;
+}
+.how{
+    width: 350px;
+height: 48px;
+font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height, or 120% */
+
+letter-spacing: -1.78571px;
+
+color: #495567;
+
+}
+
+.FAQs{
+position: relative;
+top: 30px;
+height: 48px;
+font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+/* identical to box height, or 100% */
+
+text-align: center;
+letter-spacing: -2.14286px;
+
+color: #495567;
+
+}
+.footer .container{
+ width: 1140px;
+ margin: 0 auto;
+}
+.footer-box{
+    background-image: url("./picture/Mask (5).png");
+    background-repeat: no-repeat;
+    padding: 30px 20px;
+    background-size: 1140px 200px;
+}
+
+
+.footer-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 20px;
+}
+.footer-item{
+    display: flex;
+   
+}
+.submit-box-title1{
+    position: relative;
+    left: 30px;
+}
+.submit-box-title2{
+    position: relative;
+    left: 30px;
+}
+.footer-item h2{
+    font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+/* or 100% */
+
+letter-spacing: -2.14286px;
+
+color: #FFFFFF;
+width: 415px;
+}
+footer .container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.nimadir{
+    background: #333A44;
+    position: relative;
+    top: -30px;
+}
+.nimadir-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+}
+.nimadir-item{
+    display: flex;
+}
+.nimadir-item p{
+    margin-left: 20px;
+    font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 25px;
+/* identical to box height, or 167% */
+ cursor: pointer;
+
+color: #939CAA;
+
+}
+.nimadir-item h2{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -8px;
+    font-size: 30px;
+    color:white;
+}
+.nimadir-item p:hover{
+    color:red;
+    transition: 0.3s;
+}
+.nimadir-item h2:hover{
+    color: tomato;
+    transition: 0.3s;
+    cursor: pointer;
 }
